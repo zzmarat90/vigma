@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Поддержка приложения</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+            background: white;
+            border-radius: 28px;
+            padding: 40px 32px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.02);
+        }
+
+        .icon {
+            font-size: 56px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+        }
+
+        .subhead {
+            text-align: center;
+            color: #6e6e73;
+            font-size: 17px;
+            margin-bottom: 32px;
+            border-bottom: 1px solid #e9e9ef;
+            padding-bottom: 24px;
+        }
+
+        .info-card {
+            background: #f9f9fb;
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .info-card h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-card p {
+            color: #3a3a3e;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .contact-block {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e9e9ef;
+            margin-top: 8px;
+        }
+
+        .email-link {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 500;
+            color: #0066cc;
+            text-decoration: none;
+            padding: 8px 0;
+            word-break: break-all;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .response-time {
+            font-size: 14px;
+            color: #8e8e93;
+            margin-top: 12px;
+        }
+
+        .footer-links {
+            text-align: center;
+            margin-top: 32px;
+            padding-top: 20px;
+            border-top: 1px solid #e9e9ef;
+        }
+
+        .footer-links a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 12px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 12px;
+            color: #8e8e93;
+            margin-top: 16px;
+        }
+
+        @media (max-width: 550px) {
+            .container {
+                padding: 28px 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .email-link {
+                font-size: 18px;
+            }
+            .footer-links a {
+                margin: 0 8px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            📱
+        </div>
+        <h1>Служба поддержки</h1>
+        <div class="subhead">
+            Мы здесь, чтобы помочь
+        </div>
+ <div class="info-card">
+            <h2>
+                <span>🛠️</span> Что мы можем решить?
+            </h2>
+            <p>
+                • Вопросы о работе приложения<br>
+                • Проблемы с покупками и подписками<br>
+                • Предложения по улучшению<br>
+                • Сообщения об ошибках
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h2>
+                <span>📬</span> Свяжитесь с нами
+            </h2>
+            <div class="contact-block">
+                <a href="mailto:vigma-z@mail.ru" class="email-link">
+                    vigma-z@mail.ru
+                </a>
+                <div class="response-time">
+                    ⏱️ Среднее время ответа: 1-2 рабочих дня
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="#" id="privacyLink">Политика конфиденциальности</a>
+            <span style="color:#c6c6c8;">|</span>
+            <a href="mailto:vigma-z@mail.ru">Написать в поддержку</a>
+        </div>
+        <div class="copyright">
+            © 2025 VIGMA
+        </div>
+    </div>
+
+    <script>
+        // Замените ссылку ниже на реальный URL вашей политики конфиденциальности
+        const privacyPolicyUrl = "https://github.com/zzmarat90/vigma/privacy.html";
+        
+        document.getElementById('privacyLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = privacyPolicyUrl;
+        });
+    </script>
+</body>
+</html>
